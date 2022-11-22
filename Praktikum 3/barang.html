@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Barang</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Robotto', sans-serif;">
+  <nav style="margin-top: 20px;">
+    <table style="border: 2px solid black; margin-left: auto; margin-right: auto;">
+      <tr>
+        <td><b style="margin-right: 20px; margin-left: 20px;">Home</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 20px;">Generate Link</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 20px;">Transaction History</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 20px;">Policy</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 200px;">Logout</b></td>
+      </tr>
+    </table>
+  </nav>
+  <br><br>
+  <div class="gambar" style="
+  float: left;
+  margin-left: 90px;
+  ">
+    <img style=" margin-bottom: 5px;" src="img/msi.jpg" width="25%" alt="">
+    <br>
+    <input style=" font-family: 'Robotto', sans-serif; width: 12%; font-weight: bold;" type="button"
+      value="Upload Image">
+  </div>
+  <div class="form-pemesanan" style="
+  float: right;
+  margin-top: -220px;
+  margin-right: 180px;
+  ">
+    <table>
+      <tr>
+        <td>
+          <label for="id_nama"><b>Nama Barang :</b> </label>
+        </td>
+        <td>
+          <input style=" width: 400px;" type="text" name="nama" id="id_nama">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_deskripsi"><b>Deskripsi :</b> <label></label>
+        </td>
+        <td>
+          <textarea name="deskripsi" id="id_deskripsi" cols="58" rows="6"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_acc"><b style="margin-left: 54px;">Nomor Akun :</b> </label>
+        </td>
+        <td>
+          <input style=" width: 400px;" type="text" name="acc_number" id="id_acc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_nama_bank"><b style="margin-left: 110px;">Bank :</b> </label>
+        </td>
+        <td>
+          <select style="font-family: 'Robotto', sans-serif; font-weight: bold;  width: 200px;" name="bank"
+            id="id_nama_bank">
+            <option value="HSBC">HSBC</option>
+            <option value="BRI">BRI</option>
+            <option value="BCA">BCA</option>
+            <option value="Link Aja">Link Aja</option>
+            <option value="Dana">Dana</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_nama_akun"><b>Nama Pemilik Akun : </b></label>
+        </td>
+        <td>
+          <input style="
+          font-family: poppins;  width: 300px;" type="text" name="nama_akun" id="id_nama_akun">
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <label for="id_transaksi">
+            <p style="margin-top: -45px; margin-left: 15px;"><b>Transaksi :</b></p>
+          </label>
+        </td>
+        <td>
+          <input type="number" name="transaksi" id="id_transaksi" value="1" style="width: 25px;
+          font-family: 'Robotto', sans-serif; font-weight: bold; "><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <small><b>* if the transaction is for 3 person, choose 3 from the drop-down list</b></small><br>
+          <input type="checkbox" name="mobile_number"> <small style="color: green;"><b>Send to Mobile
+              Phone</b></small><br>
+          <input type="checkbox" name="email"> <small style="color: green;"><b>Send to Email</b></small>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_no_hp">
+            <p><b>Send to Mobile Phone : </b></p>
+          </label>
+        </td>
+        <td>
+          <input style=" width: 300px;" type="text" name="mobilenumber" id="id_no_hp">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_email"><b>Send to Email :</b> </label>
+        </td>
+        <td>
+          <input style=" width: 300px;
+          " type="email" name="email" id="id_email">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="hasil_barang.html">
+            <input
+              style="background-color: limegreen; color: white;  font-family: 'Robotto', sans-serif; font-weight: bold; margin-top: 80px; width: 160px;"
+              type="button" value="Generate Nabr Link">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

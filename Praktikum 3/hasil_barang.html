@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Barang</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Robotto', sans-serif;">
+  <nav style="margin-top: 20px;">
+    <table style="border: 2px solid black; margin-left: auto; margin-right: auto;">
+      <tr>
+        <td><b style="margin-right: 20px; margin-left: 20px;">Home</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 20px;">Register</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 20px;">Policy</b></td>
+        <td>|</td>
+        <td><b style="margin-left: 80px; margin-right: 100px;">About</b></td>
+      </tr>
+    </table>
+  </nav>
+  <br><br>
+  <div class="gambar" style="
+  float: left;
+  margin-left: 90px;
+  ">
+    <img style=" margin-bottom: 5px;" src="img/msi.jpg" width="25%" alt="">
+  </div>
+  <div class="form-pemesanan" style="
+  float: right;
+  margin-top: -200px;
+  margin-right: 180px;
+  ">
+    <table>
+      <tr>
+        <td>
+          <label for="#"><label for="id_nama"><b>Nama Barang :</b> </label> </label>
+        </td>
+        <td>
+          MSI Pulse GL66 Gaming
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_deskripsi"><b style="margin-top:-35px;
+          margin-left: 15px; display: flex; ">Description :</b> <label></label>
+        </td>
+        <td>
+          <p align="justify">Rasio Aspek: 16: 9 <br>
+            Kinerja Visual: Layar 15,6 ”144hz menghadirkan gambar yang <br> benar-benar hidup dengan kecepatan refresh
+            yang tinggi sehingga <br> Anda dapat melihat setiap bingkai permainan. <br>
+            Redefined Power: The 11th Gen. <br> Prosesor Intel Core i7, memberikan kinerja tinggi <br> untuk menjalankan
+            game dan aplikasi apa pun dengan mudah. <br></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="#"><b style="margin-left: 15px;">Total Harga :</b> </label>
+        </td>
+        <td>
+          Rp 27.188.565,00
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="#">
+            <p style="margin-left: 15px;"><b>Pay to :</b></p>
+          </label>
+        </td>
+        <td>
+          101-525-778-9990
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_bank"><b style="margin-left: 15px;">Tipe Pembayaran :</b> </label>
+        </td>
+        <td>
+          <select style="font-family: 'Robotto', sans-serif; font-weight: bold;  width: 200px;" name="bank"
+            id="id_nama_bank">
+            <option value="HSBC">HSBC</option>
+            <option value="BRI">BRI</option>
+            <option value="BCA">BCA</option>
+            <option value="Link Aja">Link Aja</option>
+            <option value="Dana">Dana</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_nama_akun"><b style="margin-left: 15px;">Nama Akun : </b></label>
+        </td>
+        <td>
+          <input style="font-family: poppins; width: 340px;
+          " type="text" name="accholder" id="id_nama_akun" value="Muhamad Zein">
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <label for="id_nomor_akun">
+            <p style="margin-left: 15px;
+            margin-top: -40px;
+            display: flex;"><b>Nomor Akun:</b></p>
+          </label>
+        </td>
+        <td>
+          <input style=" width: 450px;
+          " type="text" name="accnumber" id="id_nomor_akun" value="101-525-778-9990">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="mobile_number" checked> <small style="color: green;">Send to Mobile
+            Phone</small><br>
+          <input type="checkbox" name="email" checked> <small style="color: green;">Send to Email</small>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_mobileNumber">
+            <p><b>Send to Mobile Phone :</b> </p>
+          </label>
+        </td>
+        <td>
+          <input style="
+          width: 360px;
+          " type="text" name="mobilenumber" id="id_mobileNumber" value="+628572345122">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="id_email"><b>Send to Email :</b> </label>
+        </td>
+        <td>
+          <input style="font-family: poppins; width: 300px;" type="email" name="email" value="muhamadzein@gmail.com"
+            id="id_email">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="barang.html">
+            <input
+              style="background-color: limegreen; color: white;  font-family: 'Robotto', sans-serif; font-weight: bold; margin-top: 80px; width: 160px;"
+              type="button" value="Pay using QuidLink">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
