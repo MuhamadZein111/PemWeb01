@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 4</title>
+</head>
+<body>
+    <input type="number" id="bilanganPertama" onchange="penjumlahan()"  value="0"><br>
+    <span>+</span><br>
+    <input type="number" id="bilangankeDua" onchange="penjumlahan()" value="0"><br>
+    <span>=</span><br>
+    <input type="number" id="hasilBilangan" value="0">
+
+
+    <script>
+        function penjumlahan() {
+            let bilanganPertama = Math.abs(document.getElementById('bilanganPertama').value);
+            let bilangankeDua = Math.abs(document.getElementById('bilangankeDua').value);
+
+            let hasilBilangan = bilanganPertama + bilangankeDua;
+
+            document.getElementById('hasilBilangan').value = hasilBilangan;
+            
+        }
+    </script>
+</body>
+</html>

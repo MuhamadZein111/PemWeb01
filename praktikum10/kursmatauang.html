@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Mata Uang</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Nilai</td>
+        <td>Dari</td>
+        <td>Nilai</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" id="nilaiSatu" onchange="convert()" />
+        </td>
+        <td>
+          <select id="pilihMataUang" onchange="convert()">
+            <option value="0">-- Pilih --</option>
+            <option value="USD">Dollar US</option>
+            <option value="SGD">Dollar Singapura</option>
+            <option value="Ringgit">Ringgit Malaysia</option>
+            <option value="Yen">Yen Jepang</option>
+            <option value="EURO">Euro</option>
+            <option value="Riyal">Riyal Saudi</option>
+          </select>
+        </td>
+        <td>
+          <input type="text" id="nilaiRupiah" readonly />
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function convert() {
+        let nilaiSatu = document.getElementById("nilaiSatu").value;
+        let kurs = document.getElementById("pilihMataUang").value;
+        let hasil;
+
+        if (kurs == "USD") {
+          persatu = 15614;
+          hasil = nilaiSatu * persatu;
+        } else if (kurs == "SGD") {
+          persatu = 11544;
+          hasil = nilaiSatu * persatu;
+        } else if (kurs == "Ringgit") {
+          persatu = 3516;
+          hasil = nilaiSatu * persatu;
+        } else if (kurs == "Yen") {
+          persatu = 118;
+          hasil = nilaiSatu * persatu;
+        } else if (kurs == "EURO") {
+          persatu = 16571;
+          hasil = nilaiSatu * persatu;
+        } else if (kurs == "Riyal") {
+          persatu = 4150;
+          hasil = nilaiSatu * persatu;
+        } else {
+          hasil = 0;
+        }
+
+        // Tampilan hasilnya
+        document.getElementById("nilaiRupiah").value = String("Rp. " + hasil);
+      }
+    </script>
+  </body>
+</html>

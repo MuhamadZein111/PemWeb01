@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubah warna background</title>
+  </head>
+  <body id="body">
+    <button onclick="background()">Ubah background</button>
+
+    <script>
+      function background() {
+        let acak = Math.round(Math.random() * 10);
+        let warna = ["Aqua", "Aquamarine", "Bisque", "Black", "Brown", "Chartreuse", "Chocolate", "Coral", "Cyan", "Fuchsia", "Indigo", "Lime"];
+        console.log("bilangan acak " + acak);
+        console.log("Dapat warna " + warna[acak]);
+
+        document.getElementById('body').style =
+          "background-color:" + warna[acak];
+      }
+    </script>
+  </body>
+</html>

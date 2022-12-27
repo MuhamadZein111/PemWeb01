@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <table>
+        <tr>
+            <td>Bilangan 1</td>
+            <td>:</td>
+            <td><input type="number" id="bilanganSatu"></td>
+        </tr>
+        <tr>
+            <td>Bilangan 2</td>
+            <td>:</td>
+            <td><input type="number" id="bilanganDua"></td>
+        </tr>
+    </table>
+    <button onclick="hitung()">Hitung</button>
+    <p>Hasil penjumlahan : <span id="hasil">0</span></p>
+
+    <script>
+        function hitung() {
+            let bilanganSatu = parseInt(document.getElementById('bilanganSatu').value);
+            let bilanganDua = parseInt(document.getElementById('bilanganDua').value);
+
+            let hasil = bilanganSatu + bilanganDua;
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select id="pilihGambar" onclick="picker()">
+        <option value="">--- Pilih ---</option>
+        <option value="elang.jpg">Elang</option>
+        <option value="gorila.jpg">Gorila</option>
+        <option value="singa.jpg">singa</option>
+    </select><br>
+    <img src="" id="picture" style="width: 20%; margin-top: 20px;">
+
+    <script>
+        function picker() {
+            let pilihGambar = document.getElementById('pilihGambar').value;
+            let picture = document.getElementById('picture');
+
+            picture.src = "img/" + pilihGambar;
+        }
+    </script>
+</body>
+</html>

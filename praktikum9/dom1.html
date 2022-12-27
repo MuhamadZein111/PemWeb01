@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung luas dan keliling lingkaran</title>
+</head>
+<body style="text-align: center;">
+    <h1>Menghitung luas lingkaran</h1>
+    <hr>
+    <label for="jarijari">Menghitung Jari - Jari</label>
+    <input type="number" id="jarijari">
+    <button onclick="hitungNilai()">Hitung</button>
+
+    <p>Luas lingkaran : <span id="luas">0</span></p>
+
+    <p>Keliling Lingkaran : <span id="keliling">0</span></p>
+
+
+    <script>
+        function hitungNilai() {
+            const phi = 3.14;
+            let jarijari = document.getElementById('jarijari').value;
+
+            let luas = phi * (jarijari**2);
+
+            let keliling = 2 * phi * jarijari;
+
+            document.getElementById('luas').innerHTML = luas ;
+            document.getElementById('keliling').innerHTML = keliling
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Rupiah</title>
+</head>
+<body>
+    <h1>Konversi Rupiah ke Dolar</h1>
+
+    <label for="rupiah">Rupiah</label>
+    <input type="number" id="rupiah" onchange="kursRupiah()">
+
+    <p>Hasil Konversi Rupiah ke dollar : $ <span id="hasilRupiah">0</span></p>
+
+    <h1>Konversi Dollar Ke Rupiah</h1>
+
+    <label for="Dolar">Dolar</label>
+    <input type="number" id="dollar" onchange="kurDollar()">
+
+    <p>Konversi Dollar ke rupiah : Rp. <span id="hasilDollar">0</span></p>
+
+    <script>
+        const nilaiRupiah = 14650;
+        function kursRupiah() {
+            let rupiah = document.getElementById('rupiah').value;
+
+            let hasilRupiah = rupiah / nilaiRupiah;
+            
+            document.getElementById('hasilRupiah').innerHTML = hasilRupiah;
+        }
+        function kursDollar() {
+            let dollar = document.getElementById('dollar').value;
+
+            let hasilDollar = dollar * nilaiRupiah;
+
+            document.getElementById('hasilDollar').innerHTML = hasilDollar;
+        }
+    </script>
+</body>
+</html>
